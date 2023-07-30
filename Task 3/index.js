@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
 		const task_content_component = document.createElement('div');
 		task_content_component.classList.add('content');
 
-		task_component.appendChild(task_content_element);
+		task_component.appendChild(task_content_component);
 
 		const task_input_component = document.createElement('input');
 		task_input_component.classList.add('text');
@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
 		task_input_component.value = task;
 		task_input_component.setAttribute('readonly', 'readonly');
 
-		task_content_element.appendChild(task_input_element);
+		task_content_component.appendChild(task_input_component);
 
 		const task_actions_component = document.createElement('div');
 		task_actions_component.classList.add('actions');
