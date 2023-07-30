@@ -1,44 +1,44 @@
-let outputScreen = document.getElementById("output-screen");
+let Ops = document.getElementById("output-screen");
 
 function display(num){
-    outputScreen.value += num;
+    Ops.value += num;
 }
 
 function Calculate(){
     try{
-        outputScreen.value = eval(outputScreen.value);
+        Ops.value = eval(Ops.value);
     }
     catch(err)
     {
-        alert("Invalid");
+        alert("Wrong Input");
     }
 }
 
 function Clear(){
-    outputScreen.value = "";
+    Ops.value = "";
 }
 
 function del(){
-    outputScreen.value = outputScreen.value.slice(0,-1);
+    Ops.value = Ops.value.slice(0,-1);
 }
 
 function log(){
-    outputScreen.value = Math.log(outputScreen.value);
+    Ops.value = Math.log(Ops.value);
 }
 
 function pow(){
-    outputScreen.value = Math.pow(outputScreen.value,2);
+    Ops.value = Math.pow(Ops.value,2);
 }
 
 function pi(){
-    outputScreen.value = 3.14;
+    Ops.value = 3.14;
 }
 
 function sqrt(){
-    outputScreen.value = Math.sqrt(outputScreen.value);
+    Ops.value = Math.sqrt(Ops.value);
 }
 
 function e(){
-    outputScreen.value = 2.718;
+    Ops.value = 2.718;
 }
 
