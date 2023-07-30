@@ -1,62 +1,62 @@
 window.addEventListener('load', () => {
-	const form = document.querySelector("#TF");
-	const input = document.querySelector("#Inp");
-	const list_ele = document.querySelector("#tasks");
+	const form = document.querySelector("#task-form");
+	const input = document.querySelector("#task-input");
+	const list_element = document.querySelector("#tasks");
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
-		const t = input.value;
+		const task = input.value;
 
-		const t_ele = document.createElement('div');
-		t_ele.classList.add('task');
+		const task_element = document.createElement('div');
+		task_element.classList.add('task');
 
-		const t_ctt_ele = document.createElement('div');
-		t_ctt_ele.classList.add('content');
+		const task_content_element = document.createElement('div');
+		task_content_element.classList.add('content');
 
-		t_ele.appendChild(t_ctt_ele);
+		task_element.appendChild(task_content_element);
 
-		const t_inp_ele = document.createElement('input');
-		t_inp_ele.classList.add('text');
-		t_inp_ele.type = 'text';
-		t_inp_ele.value = t;
-		t_inp_ele.setAttribute('readonly', 'readonly');
+		const task_input_element = document.createElement('input');
+		task_input_element.classList.add('text');
+		task_input_element.type = 'text';
+		task_input_element.value = task;
+		task_input_element.setAttribute('readonly', 'readonly');
 
-		t_ctt_ele.appendChild(t_input_ele);
+		task_content_element.appendChild(task_input_element);
 
-		const t_actions_ele = document.createElement('div');
-		t_actions_ele.classList.add('actions');
+		const task_actions_element = document.createElement('div');
+		task_actions_element.classList.add('actions');
 		
-		const t_edit_ele = document.createElement('button');
-		t_edit_ele.classList.add('edit');
-		t_edit_ele.innerText = 'Edit';
+		const task_edit_element = document.createElement('button');
+		task_edit_element.classList.add('edit');
+		task_edit_element.innerText = 'Edit';
 
-		const t_del_ele = document.createElement('button');
-		t_del_ele.classList.add('delete');
-		t_del_ele.innerText = 'Delete';
+		const task_delete_element = document.createElement('button');
+		task_delete_element.classList.add('delete');
+		task_delete_element.innerText = 'Delete';
 
-		t_actions_ele.appendChild(t_edit_ele);
-		t_actions_ele.appendChild(t_del_ele);
+		task_actions_element.appendChild(task_edit_element);
+		task_actions_element.appendChild(task_delete_element);
 
-		t_ele.appendChild(t_actions_ele);
+		task_element.appendChild(task_actions_element);
 
-		list_ele.appendChild(t_ele);
+		list_element.appendChild(task_element);
 
 		input.value = '';
 
-		t_edit_ele.addEventListener('click', (e) => {
-			if (t_edit_ele.innerText.toLowerCase() == "edit") {
-				t_edit_ele.innerText = "Save";
-				t_inp_ele.removeAttribute("readonly");
-				t_inp_ele.focus();
+		task_edit_element.addEventListener('click', (e) => {
+			if (task_edit_element.innerText.toLowerCase() == "edit") {
+				task_edit_element.innerText = "Save";
+				task_input_element.removeAttribute("readonly");
+				task_input_element.focus();
 			} else {
-				t_edit_ele.innerText = "Edit";
-				t_inp_ele.setAttribute("readonly", "readonly");
+				task_edit_element.innerText = "Edit";
+				task_input_element.setAttribute("readonly", "readonly");
 			}
 		});
 
-		t_del_ele.addEventListener('click', (e) => {
-			list_ele.removeChild(t_ele);
+		task_delete_element.addEventListener('click', (e) => {
+			list_element.removeChild(task_element);
 		});
 	});
 });
