@@ -2,8 +2,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #9fcdf0;
-    font-family: sans-serif;
+    background-color: #F5FFFA;
+    font-family: Arial;
     outline: none;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .calculator{
-    background-color: #ecf0f3;
+    background-color: #708090;
     padding: 15px;
     border-radius: 30px;
     box-shadow: inset 5px 5px 12px #ffffff,
@@ -28,7 +28,7 @@ input{
     grid-column: span 6;
     height: 70px;
     width: 380px;
-    background-color: #ecf0f3;
+    background-color: #708090;
     box-shadow: inset -5px -5px 12px #ffffff,
                       5px 5px 12px rgba(0,0,0,.16);
     border: none;
@@ -45,7 +45,7 @@ input{
 button{
     height: 48px;
     width: 48px;
-    background-color: #ecf0f3;
+    background-color: #708090;
     box-shadow: inset -5px -5px 12px #ffffff,
                        5px 5px 12px rgba(0,0,0,.16);
     border: none;
@@ -57,7 +57,7 @@ button{
 .equal{
     width: px;
     border-radius: 15px;
-    box-shadow: inset -5px -5px 12px #ffffff,
+    box-shadow: inset -5px -5px 12px #ffffff,   
                        5px 5px 12px rgba(0,0,0,.16);
     
 }
