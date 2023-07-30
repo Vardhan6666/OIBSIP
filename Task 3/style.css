@@ -1,8 +1,8 @@
 :root {
-	--darkest: #282e3a;
-	--darker: #5d6064;
-	--grey: #afb4be;
-	--blue: #005bef;
+	--darkest: #000000;
+	--darker: #DCDCDC;
+	--grey: #D3D3D3;
+	--crimson: #DC143C;
 	--light : rgb(226, 218, 218);
 }
 
@@ -60,10 +60,10 @@ input, button {
 }
 
 #task-submit {
-	color: var(--blue);
+	color: var(--crimson);
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-color: var(--blue);
+	background-color: var(--crimson);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -118,7 +118,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--blue);
+	color: var(--crimson);
 }
 
 .task .actions {
@@ -144,7 +144,7 @@ main {
 }
 
 .task .actions .edit {
-	background-color: var(--blue);
+	background-color: var(--crimson);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
