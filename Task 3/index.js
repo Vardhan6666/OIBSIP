@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
-	const form = document.querySelector("#task-form");
-	const input = document.querySelector("#task-input");
+	const form = document.querySelector("#TF");
+	const input = document.querySelector("#Inp");
 	const list_component = document.querySelector("#tasks");
 
 	form.addEventListener('submit', (e) => {
