@@ -24,8 +24,8 @@ window.addEventListener('load', () => {
 
 		task_content_component.appendChild(task_input_component);
 
-		const task_actions_component = document.createElement('div');
-		task_actions_component.classList.add('actions');
+		const task_ats_component = document.createElement('div');
+		task_ats_component.classList.add('actions');
 		
 		const task_edit_component = document.createElement('button');
 		task_edit_component.classList.add('edit');
@@ -35,10 +35,10 @@ window.addEventListener('load', () => {
 		task_delete_component.classList.add('delete');
 		task_delete_component.innerText = 'Delete';
 
-		task_actions_component.appendChild(task_edit_component);
-		task_actions_component.appendChild(task_delete_component);
+		task_ats_component.appendChild(task_edit_component);
+		task_ats_component.appendChild(task_delete_component);
 
-		task_component.appendChild(task_actions_component);
+		task_component.appendChild(task_ats_component);
 
 		list_component.appendChild(task_component);
 
