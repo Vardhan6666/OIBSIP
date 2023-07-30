@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-	const form = document.querySelector("#task-form");
+	const form = document.querySelector("#TF");
 	const input = document.querySelector("#task-input");
 	const list_element = document.querySelector("#tasks");
 
